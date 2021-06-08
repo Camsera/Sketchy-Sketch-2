@@ -1,7 +1,37 @@
+
 body {
     background-image: url("assets/black-texture.jpg");
     background-color: #ccc;
     
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
+}
+
+.input-container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container>*{
+    padding: 5px 5px;
+}
+
+.input-container output{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
 }
 
 .sketch-wrapper {
@@ -15,13 +45,12 @@ body {
 .sketch-container{
     border: 1px solid;
     display: grid;
-    grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
     height: 500px;
     width: 500px;
 }
 
 .grid-element {
-    border: 1px solid #222;
     background-color: #ccc;
 }

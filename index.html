@@ -5,8 +5,14 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <header class="header">
         <h1>Sketchy-Sketch</h1>
+    </header>
+    <body>
+        <div class="input-container">
+            <input type="range" min="2" max="100" value="16" class="slider" id="slide" step="1" oninput="outputUpdate(value)">
+            <output for="slide" id="box-amount">16</output>
+        </div>
         <div class="sketch-wrapper">
             <div class="sketch-container">
                 
